@@ -1,0 +1,74 @@
+/* Add your existing styles here */
+
+.stylish-list {
+    padding-left: 20px;
+    /* Adjust the padding as needed */
+}
+.mark{
+    margin-top:40px;
+    background-color: white;
+}
+.mk1{
+    margin-top: -80px;
+}
+.d1{
+    margin-top:-80px!important;
+}
+.d2{
+    margin-top:-50px!important;
+}
+ .table-responsive-lg {
+      overflow-y: auto;
+      max-height: 1000px; /* Adjust height as needed */
+    }
+    .hidden {
+      display: none;
+    }
+.stylish-list li {
+    position: relative;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.stylish-list li:before {
+    content: "\2023";
+    font-size: 40px;
+    color: orange;
+    position: absolute;
+    left: -20px;
+}
+
+.ova-heading {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.ova-heading .title {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #2c2734;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.visionback{
+    background-image: url('../../../assets/img/vision mission/image 56.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and(max-width:600px){
+    .mk1{
+        margin-top: 100px!important;
+    }
+    
+  
+}
+@media only screen and (min-width: 1280px) and (max-width:1360px){
+.elementor-widget-ova_header .wrap_ova_header .ova_header_el .header_title{
+    margin-left: 55rem;
+}
+.mark{
+    margin-top:0px;
+}
+}

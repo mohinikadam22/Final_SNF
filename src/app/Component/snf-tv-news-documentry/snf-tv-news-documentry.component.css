@@ -1,0 +1,26 @@
+@media (max-width: 1024px) {
+    .single_event_details {
+        padding: 0 0 0px;
+    }
+}
+
+.single_event_details {
+    position: relative;
+    display: block;
+    padding: 10px 0 0px;
+}
+
+@media screen and (max-width:600px) {
+   .title{
+    font-size: 30px;
+   }
+   .single_event_details{
+    margin-top: -50px;
+   }
+    
+  }
+  @media only screen and (min-width: 1280px) and (max-width:1360px){
+    .elementor-widget-ova_header .wrap_ova_header .ova_header_el .header_title{
+        margin-left: 55rem;
+    }
+    }

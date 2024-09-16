@@ -1,0 +1,53 @@
+.scrollable-section {
+    max-height: 450px;
+    overflow-y: auto;
+  }
+  .termsname{
+    font-family: Abril Fatface;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #2c2734;
+    margin: 0;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .termsname{
+        font-family: Abril Fatface;
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 400;
+        text-align: center;
+        color: #2c2734;
+        margin-top: -80px;
+        
+      }
+      .titlename{
+        margin-top: -110px !important;
+        color:white !important;
+      }
+      .privacyheading{
+        margin-top: -60px;
+      }
+      .scrollable-section{
+        margin-top: -50px;
+      }
+    }
+
+.termbackimg{
+  /* background-image: url('../../../assets/img/Terms and condition/BANER.jpg'); */
+  position: relative;
+  height: 270px;
+}
+.privacyheading{
+  position: relative;
+  top: -160px;
+  text-align: center;
+  
+  color: white;
+}
+.titlename{
+  font-family: Abril Fatface;
+  margin-top: -200px;
+  color: black;
+}

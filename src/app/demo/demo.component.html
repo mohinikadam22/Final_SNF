@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <title>Responsive Cards</title>
+  <style>
+    /* Navbar styling */
+    .navbar-custom {
+      background-color: white; /* Navbar background color */
+    }
+
+    .navbar-custom a,
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-nav .nav-link {
+      color: black; /* Navbar text color */
+    }
+
+    .navbar-custom a:hover,
+    .navbar-custom .navbar-nav .nav-link:hover {
+      background-color: orange; /* Hover background color */
+      color: #fff !important; /* Hover text color (important to override Bootstrap styles) */
+    }
+
+    /* Animation for the underlined text */
+    .navbar-custom .nav-item:hover .nav-link:after {
+      content: "";
+      display: block;
+      margin-top: 3px; /* Adjust the underline distance from the text */
+      height: 2px; /* Underline thickness */
+      width: 0;
+      background-color: #fff; /* Underline color */
+      transition: width 0.3s; /* Animation duration */
+    }
+
+    .navbar-custom .nav-item:hover .nav-link:hover:after {
+      width: 100%; /* Full width on hover */
+    }
+
+    /* Center the navbar */
+    .navbar-custom .navbar-nav {
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Move the logo to the left */
+    .navbar-custom .navbar-brand {
+      margin-right: auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Desing 4 cards */
+    .rounded-img {
+      overflow: hidden;
+      position: relative;
+      border-radius: 10px;
+    }
+
+    .rounded-img img {
+      transition: transform 0.9s;
+    }
+
+    .rounded-img:hover img {
+      transform: scale(1.2);
+    }
+
+    .social-icons {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: none;
+    }
+
+    .rounded-img:hover .social-icons {
+      display: flex;
+    }
+
+    .social-icons i {
+      font-size: 25px;
+      margin: 0 5px;
+      color: orange;
+    }
+
+    /* Custom styles for card layout */
+    .card {
+      height: 100%;
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card-title {
+      text-align: center;
+      transition: color 0.3s;
+    }
+
+    .card-title:hover {
+      color: orange;
+    }
+
+    .card-text {
+      flex-grow: 1;
+      text-align: left;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Custom button styles */
+    .btn-custom {
+      height: 50px;
+      width: 150px;
+      border-radius: 20px;
+      background-color: orange;
+      color: white;
+      transition: background-color 0.3s;
+    }
+
+    .btn-custom:hover {
+      background-color: black;
+      /* Slightly different shade on hover */
+      color: white;
+      transition: background-color 0.3s;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desing 2 cards */
+
+    .custom-card-container {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .custom-card-img {
+      transition: transform 0.8s;
+      height: 450px; /* Adjust the height as needed */
+    }
+
+    .custom-card-container:hover .custom-card-img {
+      transform: scale(1.08);
+    }
+
+    .custom-card-container .card-body {
+      flex-grow: 1;
+    }
+
+    .custom-card-container .custom-card-title {
+      transition: color 0.8s;
+      margin-top: 10px; /* Add margin to the top of the title */
+    }
+
+    .custom-card-container:hover .custom-card-title {
+      color: orange;
+    }
+
+    .custom-card-container ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .custom-card-container ul li {
+      padding-left: 1.2em;
+      text-indent: -1.2em;
+      margin-bottom: 8px; /* Adjust the margin as needed */
+      position: relative;
+    }
+
+    .custom-card-container ul li::before {
+      content: '\2023';
+      /* Unicode character for a bullet point */
+      color: orange;
+      /* Set the bullet point color */
+      font-size: 1.5em;
+      margin-right: 8px;
+      /* Adjust the spacing between the bullet point and text */
+      position: absolute;
+      left: -2px;
+      top: -8px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Desing Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="navbar-brand">
+      <img src="	https://www.socialforumindia.com/assets/images/logosmg.png" alt="Your Logo" height="30">
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Who We Are</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About Us
+          </a>
+          <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+            <a class="dropdown-item" href="#">Founders View</a>
+            <a class="dropdown-item" href="#">SNF Overview</a>
+            <a class="dropdown-item" href="#">What We Do</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="whatWeDoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            What We Do
+          </a>
+          <div class="dropdown-menu" aria-labelledby="whatWeDoDropdown">
+            <a class="dropdown-item" href="#">Ongoing Projects</a>
+            <a class="dropdown-item" href="#">Upcoming Projects</a>
+            <a class="dropdown-item" href="#">Reports</a>
+            <a class="dropdown-item" href="#">Media/Awards</a>
+            <a class="dropdown-item" href="#">Contact</a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+   <!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Design 4 cards -->
+  <div class="container mt-4">
+    <div class="row">
+
+      <!-- Card 1 -->
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card">
+          <div class="rounded-img">
+            <img src="https://www.socialforumindia.com/assets/images/causes/wa.png" class="card-img-top"
+              alt="Top Image 1">
+            <div class="social-icons">
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-yahoo"></i>
+              <i class="far fa-envelope"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">CLEAN WATER PROJECT</h5>
+            <p class="card-text">SNF Pattern, An Initiative Of Social Networking Forum ...a long-term, cost-effective
+              solution for water scarcity in difficult terrains... 10 Villages are made water
+              self-sufficient in 2 years... Need to reach 40 more villages</p>
+            <div class="btn-container">
+              <a href="#" class="btn btn-primary btn-custom">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card">
+          <div class="rounded-img">
+            <img src="https://www.socialforumindia.com/assets/images/causes/jawan.png" class="card-img-top"
+              alt="Top Image 2">
+            <div class="social-icons">
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-yahoo"></i>
+              <i class="far fa-envelope"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">SHAHID JAWAN FUND</h5>
+            <p class="card-text">The fund aims towards providing monetary relief to the families of soldiers who lost
+              their lives during service to the nation. The fundraising started in 2013 to imbibe the importance
+              of patriotism in the young generation of India through social media.</p>
+            <div class="btn-container">
+              <a href="#" class="btn btn-primary btn-custom">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card">
+          <div class="rounded-img">
+            <img src="https://www.socialforumindia.com/assets/images/causes/tribal.png" class="card-img-top"
+              alt="Top Image 3">
+            <div class="social-icons">
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-yahoo"></i>
+              <i class="far fa-envelope"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">RURAL & TRIBAL DEVELOPMENT</h5>
+            <p class="card-text">In spite of ample qualities and hardworking nature people in rural and tribal areas
+              lack
+              behind just because of availability of opportunities. Social networking forum is working on creating such
+              opportunities by supporting them in education, health, and legal sector.</p>
+            <div class="btn-container">
+              <a href="#" class="btn btn-primary btn-custom">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card">
+          <div class="rounded-img">
+            <img src="https://www.socialforumindia.com/assets/images/causes/jawan.png" class="card-img-top"
+              alt="Top Image 4">
+            <div class="social-icons">
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-yahoo"></i>
+              <i class="far fa-envelope"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">SHAHID JAWAN FUND</h5>
+            <p class="card-text">The fund aims towards providing monetary relief to the families of soldiers who lost
+              their lives during service to the nation. The fundraising started in 2013 to imbibe the importance
+              of patriotism in the young generation of India through social media.</p>
+            <div class="btn-container">
+              <a href="#" class="btn btn-primary btn-custom">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+<!-- Design 2 cards -->
+  <div class="container mt-4">
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-6 mb-4">
+        <div class="card custom-card-container">
+          <img src="../../assets/Data/before_after.jpg" class="card-img-top custom-card-img" alt="Image 1">
+          <div class="card-body">
+            <h4 class="card-title custom-card-title">MANY VILLAGES MADE SELF-SUFFICIENT BY SOCIAL NETWORKING FORUM</h4>
+            <ul>
+              <li>Gadhaipada: Taluka Peth. <br>
+                District: Nashik, Population 350. <br>
+                Scheme supported by: Storewell Company,
+                Nashik.</li>
+              <li>Torangan: Taluka Tryambakeshwar. <br>
+                District: Nashik, Population 2100. <br>
+                Scheme supported by: Social Media
+                youth.</li>
+              <li>Shevkhandi, Fanas pada, Khotre pada: Taluka Peth Tehsil. <br>
+                District: Nashik, Population 2100. <br>
+                Scheme supported by: Indian Association, Dermatology association.</li>
+              <li>Vadpada: Taluka Peth. <br>
+                Nashik Population – 600. <br>
+                Scheme Supported by: social media youngsters.</li>
+              <li>Hedpada: Taluka Tryambakeshwar. <br>
+                District - Nashik Population – 450 <br>
+                Scheme Supported by: Medicos in Nashik District.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-6 mb-4">
+        <div class="card custom-card-container">
+          <img src="https://www.socialforumindia.com/assets/images/reasons/xt.png" class="card-img-top custom-card-img"
+            alt="Image 2">
+          <div class="card-body">
+            <h4 class="card-title custom-card-title">INSTEAD OF SEARCHING WATER IN JUNGLES, NOW WE CAN STUDY...BUT WHAT
+              ABOUT</h4>
+            <p>Helping out some villages is not all. The forum has many more villages on the work list. However, we need
+              generous donors and corporations across the nations in order to raise funds. All we ask for is a
+              wholehearted participation and help in any form. We call out to all the respected citizens from all the
+              sectors and also to the corporate companies who could be of great help with their CSR donations. Clean
+              drinking water is the right of every person and we are committed to providing it for them. Together We Can
+              Bring Change. YES WE CAN !! Team SNF.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,640 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+<div data-elementor-type="wp-page" data-elementor-id="201" class="elementor elementor-201">
+    <app-header></app-header>
+
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div *ngFor="let item of carrosalData; let i = index" [class.active]="i === 0" class="carousel-item">
+                <img [src]="item.imageUrl" class="d-block w-100 size1" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev add" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+            <span aria-hidden="true" style="color:black; font-size: 25px;">&#x276E;</span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+            <span aria-hidden="true" style="color:black; font-size: 25px;">&#x276F;</span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+    
+
+
+
+    <div class="text-center" id="socialnetworking">
+        <div class="container" style="padding-top: 100px;">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="ova-heading">
+                        <!-- <h4 class="Hometitle">Help the People</h4> -->
+                        <h2 class="homepagenames">Social Networking Forum</h2>
+                        <h4 class="Hometitle">Empowering Lives In Remote Communities</h4>
+                        <p class="text-justify" style="font-family: Century Gothic;">Established in 2010 by visionary
+                            social reformer Pramod Gopalrao Gaikwad, Social Networking Forum is committed to the
+                            holistic development of communities leaving in remote places of Maharashtra state in India.
+                            We believe in the power of water, education, and health as catalysts for positive change. So
+                            our mission is clear: to provide access to clean water, quality education, and essential
+                            healthcare services. Together, we are shaping a brighter future for our tribal brethren.
+                            Join us in our mission to uplift lives and build a more equitable society.</p>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <div class="readmorebtn">
+                            <a routerLink="/whoweare"><button type="button"
+                                    style="background-color: #ff6d12; color: white; padding: 12px; width: 180px; border-radius: 50px; border: none;"><b>Read
+                                        More</b></button></a>
+                        </div>
+
+                    </div>
+                    <br>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img src='../../../assets/img/Home_Page/Frame 2.png' class="img-fluid" alt="...">
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <!-- HTML -->
+
+
+    <div class="text-center">
+        <div class="container">
+            <div class="ova-heading">
+                <!-- <h4 class="Hometitle text-center mt-3">Happy People</h4> -->
+                <h2 class="homepagenames text-center mt-2">Our Supporters</h2>
+            </div>
+            <br>
+        </div>
+        <div class="card Our_Supportersimgs" style="background-color: #ff6d12;">
+            <div class="scroll-container">
+                <div *ngFor="let item of support_data; let i = index" [class.active]="i === 0">
+                    <img [src]="item.imageUrl" class="img-fluid item" alt="..." id="ourimg">
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- 2 Cards  -->
+    <section
+        class=" elementor-section elementor-top-section elementor-element elementor-element-500d24f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        data-id="500d24f" data-element_type="section">
+        <div class="elementor-container elementor-column-gap-default">
+            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d086ebf asting_carosel_right"
+                data-id="d086ebf" data-element_type="column">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                    <div class="elementor-widget-container">
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12" *ngFor="let item of Home_2_Cards_Data">
+                                <div class="card carddesign ">
+                                    <img class="rounded img-fluid carddesign-img-hover" [src]="item.imageUrl"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h3
+                                            class="m-0 text-black card-title text-center fw-bold bg-secondary-custom text-white-custom carddesign-title-hover">
+                                            {{ item.name2 }}</h3>
+                                        <p class="m-3 card-text text-black text-center font-weight-normal text-justify lh-base truncate bg-info-custom text-white-custom carddesign-text-hover"
+                                            [ngClass]="{'show-all': item.showFullPara2cards}">{{ item.para2 }}</p>
+                                        <div class="text-center">
+                                            <button class="btn btn-primary btn-read-more"
+                                                (click)="toggleFullPara2cards(item)"
+                                                *ngIf="!item.showFullPara2cards">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SOCIAL NETWORKING FORUM  -->
+    <div class="ourhome">
+        <section style="margin-top: 0rem"
+            class="elementor-section elementor-top-section elementor-element elementor-element-ac8e6d1 elementor-section-boxed elementor-section-height-default elementor-section-height-default "
+            data-id="ac8e6d1" data-element_type="section"
+            data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-background-overlay"></div>
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-858254f"
+                    data-id="858254f" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-282e947 elementor-widget elementor-widget-ova_heading"
+                            data-id="282e947" data-element_type="widget" data-widget_type="ova_heading.default">
+                            <div class="elementor-widget-container">
+                                <div class="ova-heading">
+                                    <h4 class="sub_title thrid_font">Spreading Joy and Happiness</h4>
+                                    <h2 class="title second_font">SOCIAL NETWORKING FORUM</h2>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-d8c566f elementor-widget elementor-widget-ova_icon_box"
+                            data-id="d8c566f" data-element_type="widget" data-widget_type="ova_icon_box.default">
+                            <div class="elementor-widget-container">
+                                <div class="ova-icon-box">
+                                    <div class="img-animation"> <img decoding="async"
+                                            src="../../../assets/img/arrows.png" alt=""></div>
+                                    <div class="icon-box-content-video video-btn" data-toggle="modal"
+                                        src="../../../assets/img/SNF new logo 2020.jpeg" data-target="#videoModal"><img
+                                            src="../../../assets/img/SNF new logo 2020.jpeg" alt=""></div>
+                                    <br><br>
+                                    <br><br>
+                                    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body"> <button type="button" class="close"
+                                                        data-dismiss="modal" aria-label="Close"> <span
+                                                            aria-hidden="true">&times;</span> </button>
+                                                    <div class="embed-responsive embed-responsive-16by9"> <iframe
+                                                            class="embed-responsive-item" id="video"
+                                                            allow="autoplay"></iframe></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7755ce8"
+                    data-id="7755ce8" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-3903e2e elementor-widget elementor-widget-ova_list_icon_transform"
+                            data-id="3903e2e" data-element_type="widget"
+                            data-widget_type="ova_list_icon_transform.default">
+                            <div class="elementor-widget-container">
+                                <div class="ova-list-icon-transform ">
+                                    <ul>
+                                        <li class="ourlist">
+                                            <div class="list-text">
+                                                <h4 class="title text1"><b>SNF Highlights: Impacting 200,000+ Lives</b></h4>
+                                                <!-- <p class="text" style="text-align: justify;">
+                                                    
+                                                    • 33 Villages (40,000 Villagers) Tanker-Free 26 Libraries Benefiting
+                                                    25,000 People<br>
+                                                    • 70 Students Secured Government Jobs 3,000+ Students Now Computer
+                                                    Literate<br>
+                                                    • Supported 5 Army Goodwill Schools in J&K 500 Kids Rescued from
+                                                    Malnutrition <br>
+                                                    • Saved 3 Severely Malnourished Children Medical Aid for 25,000
+                                                    Villagers<br>
+                                                    • Financial Aid to 35 Martyr Families Hundreds of Trees
+                                                    Conserved<br>
+                                                    • Groceries for 35,000 Labourer Families During COVID<br>
+                                                    • Support for 15 Orphanages and Old Age Homes<br>
+                                                    SNF is dedicated to uplifting and transforming lives in remote and
+                                                    underserved communities through impactful initiatives. -->
+                                                <!-- <ul class="a pl-2" style="list-style-type: circle!important; columns: 2; -webkit-columns: 2; -moz-columns: 2;">
+                                                        <b><li class="text"> 33 Villages (40,000 Villagers) Tanker-Free </li>
+                                                       
+                                                        <li class="text"> 70 Students Secured Government Jobs </li>
+                                                        
+                                                        <li class="text"> Supported 5 Army Goodwill Schools in J&K </li>
+                                                       
+                                                        <li class="text"> Saved 3 Severely Malnourished Children </li>
+                                                      
+                                                        <li class="text"> Financial Aid to 35 Martyr Families </li>
+                                                       
+                                                        <li class="text"> Groceries for 35,000 Labourer Families During COVID</li >
+                                                        <li class="text"> Support for 15 Orphanages and Old Age Homes</li></b>
+
+                                                          <li class="text">26 Libraries Benefiting 25,000 People</li>
+
+                                                           <li class="text">3,000+ Students Now Computer Literate</li>
+                                                             <li class="text">500 Kids Rescued from Malnutrition</li >
+                                                                    <li class="text">Medical Aid for 25,000 Villagers</li>
+                                                                       <li class="text">Hundreds of Trees Conserved</li >
+                                                    </ul> -->
+                                                <div class="cont">
+                                                    <table>
+
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>33 Villages (40,000 Villagers) Tanker-Free</td>
+                                                                <td>26 Libraries Benefiting 25,000 People</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>70 Students Secured Government Jobs</td>
+                                                                <td>3,000+ Students Now Computer Literate</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Supported 5 Army Goodwill Schools in J&K</td>
+                                                                <td>500 Kids Rescued from Malnutrition</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Saved 3 Severely Malnourished Children</td>
+                                                                <td>Medical Aid for 25,000 Villagers</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Financial Aid to 13 Martyr Families</td>
+                                                                <td>Hundreds of Trees Conserved</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Groceries for 35,000 Labourer Families During COVID
+                                                                </td>
+                                                                <td>Support for 15 Orphanages and Old Age Homes</td>
+                                                            </tr>
+                                                            <!-- <tr>
+                                                                <td>Support for 15 Orphanages and Old Age Homes</td>
+                                                                <td></td>
+                                                            </tr> -->
+                                                            <tr>
+                                                                <td colspan="2">SNF is dedicated to uplifting and
+                                                                    transforming lives in remote and underserved
+                                                                    communities through impactful initiatives.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <a href="/DonateNow"><button type="button"
+                                                        class="btn btn-primary donatebtn"
+                                                        style="background-color: #ff6d12; color: white; justify-content: center; margin-top: 50px;  border: none; border-radius: 50px; padding: 15px;   margin-left:120px"><b>Donate
+                                                            Now</b></button></a>
+                                                </div>
+                                                <div class="const1 ">
+                                                    <!-- First Column -->
+                                                    <ul class="a" style="list-style-type: circle!important;">
+                                                        <b>
+                                                            <li class="text">33 Villages (40,000 Villagers) Tanker-Free
+                                                            </li>
+                                                            <li class="text">70 Students Secured Government Jobs</li>
+                                                            <li class="text">Supported 5 Army Goodwill Schools in J&K
+                                                            </li>
+                                                            <li class="text">Saved 3 Severely Malnourished Children</li>
+                                                            <li class="text">Financial Aid to 35 Martyr Families</li>
+                                                            <li class="text">Groceries for 35,000 Labourer Families
+                                                                During COVID</li>
+                                                            <li class="text">Support for 15 Orphanages and Old Age Homes
+                                                            </li>
+                                                        </b>
+                                                    </ul>
+
+                                                    <!-- Second Column -->
+                                                    <ul class="a" style="list-style-type: circle!important;">
+                                                        <li class="text">26 Libraries Benefiting 25,000 People</li>
+                                                        <li class="text">3,000+ Students Now Computer Literate</li>
+                                                        <li class="text">500 Kids Rescued from Malnutrition</li>
+                                                        <li class="text">Medical Aid for 25,000 Villagers</li>
+                                                        <li class="text">Hundreds of Trees Conserved</li>
+                                                    </ul>
+                                                </div>
+
+
+
+
+                                                <!-- <p class="text" style="text-align: justify; margin-left:30px">
+                                                        SNF is dedicated to uplifting and transforming lives in remote and underserved communities through impactful initiatives.
+                                                    </p> -->
+                                                <!-- Our goal is to solve critical issues such as access to clean drinking water in tribal areas of Maharashtra state, establishing libraries to foster a culture of reading among students in remote areas, generating employment opportunities, eradicating malnutrition, delivering educational materials and resources to enhance learning opportunities in conflict-affected regions like Kashmir valley in association with Indian defence Officers and Army Goodwill Schools and improving educational facilities for school children in remote areas in Satpuda and Sahyadry mountain ranges in Maharashtra. -->
+                                                <!-- </p> -->
+                                                <!-- <div class="elementor-widget-container"
+                                                style="padding-top: 20px; padding-bottom: -5px;">
+                                                <div class="ova-btn"> <a routerLink="/DonateNow" class="btn"> Donate Now
+                                                    </a></div>
+                                            </div> -->
+                                                <!-- <a href="/DonateNow"><button type="button"
+                                                        class="btn btn-primary donatebtn"
+                                                        style="background-color: #ff6d12; color: white; justify-content: center;  border: none; border-radius: 50px; padding: 15px;   margin-left:120px"><b>Donate
+                                                            Now</b></button></a> -->
+                                            </div>
+                                            
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+        <section class="position-relative pb-lg-5">
+            <div class="container">
+                <div class="row">
+                    <section style="margin-top: 50px;">
+                        <h1 style="font-family: Abril Fatface;" class="text-center our_ongoing">Our On Going Initiatives
+                        </h1>
+                        <div class="row d-flex justify-content-center smilerow">
+                            <div class="col-lg-3 col-md-2 col-sm-12" style="margin-top: -30px;"
+                                *ngFor="let item of limitedUpcomingEvents ">
+                                <div class="card card_home"
+                                    style="background-color: #FAE5D8; border-radius: 20px; height:390px; box-shadow: 20px 15px 40px 0px #00000040;">
+                                    <div class="card-body text-center">
+                                        <img [src]="item.mainImageUrl" alt="Project Image"
+                                            style=" width: 230px; height: 250px; padding:10px">
+                                        <p style="text-align: justify; line-height: normal; padding:5px">
+                                            {{ limitWords(item.Paragraph, 11) }} </p>
+                                    </div>
+                                </div>
+                             
+                                <a [routerLink]="['/projectDetails']" [queryParams]="{ id: item.id }" class="text-white main">
+                                    <div class="smileinfo  py-3 mt-3  rounded-pill text-center" id="homecard_data">
+                                        <b class="info" [innerHTML]="item.category"></b>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <div id="newsarticle" class=" pt-lg-2">
+            <section
+                class="elementor-section elementor-top-section elementor-element elementor-element-b198359 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                data-id="b198359" data-element_type="section">
+                <div class="elementor-container elementor-column-gap-default">
+                    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-51a0e3a"
+                        data-id="51a0e3a" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-a545222 elementor-widget elementor-widget-ova_heading"
+                                data-id="a545222" data-element_type="widget" data-widget_type="ova_heading.default">
+                                <div class="elementor-widget-container newsarticle_home">
+                                    <div class="ova-heading justify-content-center">
+                                        <!-- <h4 class="sub_title thrid_font">From the Blog</h4> -->
+                                        <h2 class="title second_font t1">News & Articles</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="HEAD_START" style="background-color: #FAE5D8; margin-top: -20px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12 p-lg-3" *ngFor="let item of newsAndArticlesData">
+                            <img [src]="item.imageUrl" class="img-fluid" alt="..." >
+                        </div>
+
+                    </div>
+                </div>
+                <!-- <div class="HEAD_START" style="background-color: #D8FFFF; margin-top: -20px;">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12" *ngFor="let item of newsAndArticlesData">
+                          <img [src]="item.imageUrl" class="img-fluid" alt="..." (click)="openModal(item.imageUrl)">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                   
+                  <div class="modal" tabindex="-1" [ngClass]="{'show': isModalOpen}" *ngIf="isModalOpen">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Image Preview</h5>
+                          <button type="button" class="btn-close" (click)="closeModal()">&times;</button>
+                        </div>
+                        <div class="modal-body text-center">
+                          <img [src]="selectedImageUrl" class="img-fluid" alt="Zoomed Image">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  </div> -->
+                <!-- <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12" *ngFor="let item of newsAndArticlesData">
+                        <img [src]="item.imageUrl" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <img src="../../../assets/img/ArticleOnSNF/article_secondimg.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <img src="../../../assets/img/ArticleOnSNF/article_thirdimg.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div> -->
+                <!-- <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <img src="../../../assets/img/ArticleOnSNF/article_fourimg.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <img src="../../../assets/img/ArticleOnSNF/article_fiveimg.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <img src="../../../assets/img/ArticleOnSNF/article_siximg.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div> -->
+            </div>
+
+
+
+            <section>
+                <div class="container-fluid snileback">
+                    <div class=" text-center smiletiile">Bringing Thousands Of Smiles </div>
+                    <div class=" row d-flex justify-content-center smilerow">
+
+                        <div class="col-lg-6 Bringing_card mt-1">
+                            <img src="../../../assets/img/Banners/Smile.jpg" alt="">
+
+                            <!-- <img src="../../../assets/img/Home_Page/Rectangle 4362.png" alt=""> -->
+                            <div class="smileinfo mb-joy  mt-4  joy rounded-pill  text-center" >
+                                Spreading Joy & Happiness..!
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- <img src="../../../assets/img/Home_Page/Group 1000003958.png" alt=""> -->
+
+                            <img src="../../../assets/img/Banners/Smile1.jpg" alt="">
+                            <div class="smileinfo mb-joy  joy  mt-4  rounded-pill  text-center" >
+                                Spreading Joy & Happiness..!
+                            </div>
+                            <!-- <div class="smileinfo mx-4 mt-4 px-3 py-3 rounded-pill  text-center">
+                                Spreading Joy & Hope ...!
+                            </div> -->
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="text-center capsultiitle " id="reviewname">Reviews</div>
+
+            <!-- <div id="carouselExample" class="carousel ">
+                <div class="carousel-inner carsoleimgs">
+                    <div *ngFor="let item of Home_4_Cards_Data; let i = index" class="carousel-item"
+                        [ngClass]="{'active': i === 0}">
+                        <div class="container-fluid">
+                            <div>
+                                <div class="row d-flex justify-content-center cpsulebackcolor">
+                                    <div class="col-lg-8 ">
+                                        <div class="row cpsuleback rounded-5 p-lg-4 p-2 text-justify m-4 m-lg-0">
+                                            <div class="col-lg-4 pt-3">
+                                                <img [src]="item.imageUrl" class="testomonialimg" alt="">
+                                            </div>
+                                            <div class="col-lg-8 d-grid align-content-center">
+                                                <div class="capsultiitle">{{item.name}}</div>
+                                                <p style="font-style: oblique; font-size: 20px;">{{item.city}}</p>
+                                                <div class="pb-3">{{item.para}}</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="" aria-hidden="true" style="color:black; font-size: 25px;">&#x276E;</span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="" aria-hidden="true" style="color:black; font-size: 25px;">&#x276F;</span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div> -->
+
+            <!-- <div id="carouselExample" class="carousel">
+                <div class="carousel-inner carsoleimgs">
+                  <div class="carousel-item" *ngFor="let group of Home_4_Cards_Data | slice: 0:Home_4_Cards_Data.length; let i = index" [ngClass]="{'active': i === 0}">
+                    <div class="container-fluid">
+                      <div class="row d-flex justify-content-center cpsulebackcolor">
+                      
+                        <div *ngFor="let item of Home_4_Cards_Data.slice(i * 4, (i + 1) * 4)" class="col-lg-3">
+                          <div class="cpsuleback rounded-5 p-lg-3 text-justify m-2 m-lg-0">
+                            <div class="pt-1">
+                              <img [src]="item.imageUrl" class="testomonialimg" alt="">
+                            </div>
+                            <div class="d-grid align-content-center">
+                              <div class="capsultiitle">{{item.name}}</div>
+                              <p style="font-style: oblique; font-size: 20px; text-align: center !important">{{item.city}}</p>
+                              <div class="pb-3" style="word-wrap: normal;">{{limitWords(item.para,25)}}</div>
+                              <button class="btn btn-link p-0" >Read More</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span aria-hidden="true" style="color:black; font-size: 25px;">&#x276E;</span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span aria-hidden="true" style="color:black; font-size: 25px;">&#x276F;</span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div> -->
+            <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"> -->
+               
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner carsoleimgs">
+                      <div 
+                        class="carousel-item" 
+                        *ngFor="let i of [0, 1]" 
+                        [ngClass]="{'active': i === 0}">
+                        <div class="container-fluid">
+                          <div class="row d-flex justify-content-center cpsulebackcolor">
+                            <div *ngFor="let item of Home_4_Cards_Data.slice(i * 4, (i + 1) * 4)" class="col-lg-3">
+                              <div class="cpsuleback rounded-5 p-lg-3 text-justify m-2 m-lg-0">
+                                <div class="pt-1">
+                                  <img [src]="item.imageUrl" class="testomonialimg" alt="">
+                                </div>
+                                <div class="d-grid align-content-center">
+                                  <div class="capsultiitle">{{item.name}}</div>
+                                  <p style="font-style: oblique; font-size: 16px; text-align: center !important">{{limitWords(item.city,3)}}</p>
+                                  <div class="p-3 hgt"  >{{limitWords(item.para,25)}}</div>
+                                </div>
+                                <!-- <div class="card-footer"> -->
+                                  <button class="btn btn-link Read" (click)="openModal(item)">Read More</button>
+                                <!-- </div> -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span aria-hidden="true" style="color:black; font-size: 25px;">&#x276E;</span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span aria-hidden="true" style="color:black; font-size: 25px;">&#x276F;</span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>                
+              
+              <!-- Modal -->
+              <div class="modal fade" [ngClass]="{'show': isModalOpen}" [ngStyle]="{'display': isModalOpen ? 'block' : 'none'}" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" (click)="closeModal()"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img [src]="selectedCard?.imageUrl" alt=""class="testomonialimg" style="margin-right:80px ;" >
+                      <h5>{{selectedCard?.name}}</h5>
+                      <p>{{selectedCard?.city}}</p>
+                      <p>{{selectedCard?.para}}</p>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+              
+              
+
+            <div>
+
+            </div>
+            
+
+
+
+
+
+
+
+            <app-footer></app-footer>
+        </div>

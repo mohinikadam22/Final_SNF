@@ -1,0 +1,75 @@
+.ova-heading .title {
+    font-size: 50px;
+    line-height: 44px;
+    font-weight: 400;
+    color: #2c2734;
+    margin: 0;
+    margin-bottom: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+.text_link  a{
+  text-decoration: none!important;
+}
+
+.text_link  a:hover{
+  color: #ff6d12;
+
+}
+.under a{
+  text-decoration: none;
+}
+.card1{
+  padding-top: 50px;
+  
+    background-color: #FAE5D8; 
+    border: none;
+}
+.card-body h2 {
+  text-align: center;
+}
+button{
+  margin-left: 540px;
+}
+.ova-heading .sub_title {
+    font-size: 30px;
+    display: grid;
+    line-height: 40px;
+    font-weight: 400;
+    /* display: inline-block; */
+    margin: 0;
+    justify-content: center;
+    align-content: center;
+}
+
+.card-body i{
+  color: #ff6d12;
+  font-size: 30px;
+  border-radius: 50%;
+  margin-top: 8px;
+}
+.btn-orange {
+    background-color: #ff6d12;
+    color: white;
+    border-radius: 20px; /* Adjust as needed for the desired button curve */
+  }
+  
+  .btn-orange:hover {
+    background-color: #ff6d12; /* Change hover color if needed */
+  }
+  
+
+  @media only screen and (max-width: 600px) {
+    #contact_us{
+      display: inline;
+    }
+    .submitbtn{
+      /* position: absolute; */
+      margin-left:50px;
+      background-color: #ff6d12!important;
+    }
+.card-body{ 
+  margin-top: -80px;
+  }
+  }

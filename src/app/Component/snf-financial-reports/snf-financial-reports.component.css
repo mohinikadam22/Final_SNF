@@ -1,0 +1,22 @@
+.logo_head{
+    text-align: center;
+    padding-top: 30px;
+}
+#head_name{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 35px;
+}
+i {
+    font-size: 24px; /* Adjust size as needed */
+    color: red;  /* Adjust color as needed */
+  }
+
+
+  @media screen and (max-width:600px) {
+    #head_name{
+        font-size: 25px;
+    }
+    
+  }

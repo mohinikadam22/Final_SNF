@@ -1,0 +1,16 @@
+.accordion .btn-link {
+    text-decoration: none;
+    border: none;
+    box-shadow: none; /* Remove any shadow */
+}
+
+.accordion .btn-link:focus {
+    outline: none;
+    border: none;
+    box-shadow: none; /* Ensure no shadow on focus */
+}
+@media only screen and (min-width: 1280px) and (max-width:1360px){
+.elementor-widget-ova_header .wrap_ova_header .ova_header_el .header_title{
+    margin-left: 55rem;
+}
+}

@@ -1,0 +1,162 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ovatheme_Website": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            
+            "outputPath": "dist/ovatheme-website",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              
+              "src/styles.css"
+            ],
+           "scripts": [
+  "node_modules/@popperjs/core/dist/umd/popper.min.js",
+  "node_modules/bootstrap/dist/js/bootstrap.min.js"
+]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "3mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "180kb",
+                  "maximumError": "150kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "ovatheme_Website:build:production"
+            },
+            "development": {
+              "browserTarget": "ovatheme_Website:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "ovatheme_Website:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "tsconfig.spec.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css",
+              "src/assets/CSS/css-712bd7b0b8.css",
+              "src/assets/CSS/css-4182531bbd056.css",
+              "src/assets/CSS/css-bd7760280da5c.css",
+              "src/assets/CSS/css.css",
+              "src/assets/wp-content/cache/autoptimize/css/autoptimize_fc232e91bf1934bb780d6bb40a811e39.css",
+              "src/assets/wp-content/cache/autoptimize/css/autoptimize_645e25746732f92ab8912b8a07744c57.css",
+              "src/assets/wp-content/cache/autoptimize/css/autoptimize_2c83b0d1631f28580fb2fad72bc927c5.css",
+              "src/assets/wp-content/cache/autoptimize/css/autoptimize_645e25746732f92ab8912b8a07744c57.css",
+              "src/assets/wp-content/cache/autoptimize/css/autoptimize_e19efd0dfa83d056970239b9ef639edd.css",
+              "src/assets/wp-content/cache/autoptimize/css/autoptimize_645e25746732f92ab8912b8a07744c57.css",
+              "src/assets/wp-content/cache/autoptimize/css/autoptimize_e19efd0dfa83d056970239b9ef639edd.css",
+              "src/assets/wp-content/cache/autoptimize/css/autoptimize_645e25746732f92ab8912b8a07744c57.css",
+              "src/assets/wp-content/cache/autoptimize/css/autoptimize_a3159f7d18e79581e90959495b52bad6.css",
+              "src/assets/wp-content/cache/autoptimize/css/autoptimize_9c76129becd45bf23778e99718a8b986.css",
+              "src/assets/wp-content/cache/autoptimize/css/autoptimize_9c76129becd45bf23778e99718a8b986.css",
+              "src/assets/wp-content/cache/autoptimize/css/autoptimize_7352b73a6d8458fc23514b615d8d0bb7.css",
+              "src/assets/wp-content/wp-content/cache/autoptimize/css/autoptimize_f7c6f71594c8bf92140049197000d6ea.css",
+              "src/assets/wp-content/cache/autoptimize/css/autoptimize_69a2b5b933eb4e716076fc209831c4a7.css",
+              "src/assets/wp-content/cache/autoptimize/css/autoptimize_34e266563168fdb37df79de49614bb22.css",
+              "src/assets/wp-content/cache/autoptimize/css/autoptimize_34e266563168fdb37df79de49614bb22.css",
+              "src/assets/wp-content/cache/autoptimize/css/autoptimize_645e25746732f92ab8912b8a07744c57.css",
+              "src/assets/wp-includes/css/dist/block-library/style.min84fc.css",
+              "src/assets/wp-content/plugins/contact-form-7/includes/css/styles38d6.css",
+              "src/assets/wp-content/plugins/contact-form-7/includes/css/styles38d6.css",
+              "src/assets/wp-content/plugins/ova-events/assets/css/frontend/event.css",
+              "src/assets/wp-content/plugins/woocommerce/assets/css/select2db31.css",
+              "src/assets/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreendb31.css",
+              "src/assets/wp-content/plugins/woocommerce/assets/css/woocommercedb31.css",
+              "src/assets/wp-content/plugins/give/assets/dist/css/give5589.css",
+              "src/assets/wp-content/plugins/give/assets/dist/css/give-donation-summary5589.css",
+              "src/assets/wp-content/themes/asting/assets/libs/bootstrap/css/bootstrap.min.css",
+              "src/assets/wp-content/themes/asting/assets/libs/fontawesome/css/v4-shims.min.css",
+              "src/assets/wp-content/themes/asting/assets/libs/fontawesome/css/all.min.css",
+              "src/assets/wp-content/themes/asting/assets/libs/elegant_font/ele_style.css",
+              "src/assets/wp-content/themes/asting/assets/libs/icomoon/style.css",
+              "src/assets/wp-content/themes/asting/assets/libs/fancybox-master/dist/jquery.fancybox.min.css",
+              "src/assets/wp-content/themes/asting/assets/css/theme.css",
+              "src/assets/wp-content/themes/asting/style.css",
+              "src/assets/wp-content/themes/asting-child/style.css",
+              "src/assets/wp-content/plugins/recent-posts-widget-with-thumbnails/public03db.css",
+              "src/assets/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min50c3.css",
+              "src/assets/wp-content/plugins/elementor/assets/css/frontend.min34a7.css",
+              "src/assets/wp-content/cache/autoptimize/css/autoptimize_55a045cbbebad1024ff9aab050ace0f2.css",
+              "src/assets/wp-content/cache/autoptimize/css/autoptimize_36693393e9c7ff6e34a454fd201e9e1f.css",
+              "src/assets/wp-content/cache/autoptimize/css/autoptimize_645e25746732f92ab8912b8a07744c57.css",
+              "src/assets/wp-content/cache/autoptimize/css/autoptimize_65520caaf6ee5d656afd225dda624d96.css",
+              "src/assets/wp-content/cache/autoptimize/css/autoptimize_34e266563168fdb37df79de49614bb22.css",
+              "src/assets/wp-content/cache/autoptimize/css/autoptimize_94c2ca929850cedf69fba903b6879189.css"
+            ],
+            "scripts": [
+              
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/popper.js/dist/umd/popper.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "ba0addac-6045-4c29-a567-b700efb407d4"
+  }
+}

@@ -1,0 +1,140 @@
+.HEAD_START {
+    text-align: center;
+    padding-top: 40px;
+    /* background-color: rgb(235, 237, 238); */
+    height: auto;
+}
+
+#ON_GOING_NAME {
+    color: orange;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#IMG_LOGO {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+#IMG_LOGO:hover {
+    box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.2);
+}
+
+#Clean_Water {
+    text-align: center;
+    color: orange;
+    font-size: 20px;
+}
+
+#para {
+    text-align: justify;
+    padding-right: 10px;
+}
+
+#PROJECT_CARRIED {
+    color: red;
+    font-size: 30px;
+}
+
+#IMG_NAME {
+    color: blue;
+    font-size: 15px;
+}
+
+#CARD_IMG {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+#CARD_IMG:hover {
+    box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+
+.HEAD_START {
+    text-align: center;
+    padding-top: 40px;
+    height: auto;
+}
+
+#ON_GOING_NAME {
+    color: orange;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#Clean_Water {
+    text-align: center;
+    color: red;
+    font-size: 36px;
+}
+
+#para {
+    text-align: justify;
+    padding-right: 10px;
+}
+
+#PROJECT_CARRIED {
+    color: red;
+    font-size: 30px;
+}
+
+#IMG_NAME {
+    color: orange;
+    font-size: 20px;
+}
+
+#CARD_IMG {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+#CARD_IMG:hover {
+    box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.2);
+
+
+}
+
+
+
+
+
+/* Desing  */
+#CARD_IMG_dynamically {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+#CARD_IMG_dynamically img {
+    transition: transform 0.5s ease;
+}
+
+#CARD_IMG_dynamically:hover {
+    transform: scale(1.1);
+}
+
+#CARD_IMG_dynamically:hover img {
+    transform: scale(1.2);
+}
+
+#IMG_NAME_dynamically {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 30px;
+    color: orangered;
+    /* font-weight: bolder; */
+    font-size: 17px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    margin: 0;
+    transition: background-color 0.5s ease;
+}
+
+#CARD_IMG_dynamically:hover #IMG_NAME_dynamically {
+    background-color: rgba(0, 0, 0, 0.9);
+}

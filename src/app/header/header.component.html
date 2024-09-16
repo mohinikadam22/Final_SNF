@@ -1,0 +1,314 @@
+<head>
+
+    <!-- Your app root element -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel='stylesheet' id='google-fonts-1-css'
+        href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CShadows+Into+Light%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRubik%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.4.3'
+        type='text/css' media='all' />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <script type="text/javascript" src="https://demo.ovatheme.com/asting/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"
+        id="jquery-core-js"></script>
+    <script type="text/javascript"
+        id="wc-add-to-cart-js-extra">var wc_add_to_cart_params = { "ajax_url": "\/asting\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/asting\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View cart", "cart_url": "https:\/\/demo.ovatheme.com\/asting\/cart\/", "is_cart": "", "cart_redirect_after_add": "no" };</script>
+    <script type="text/javascript"
+        id="woocommerce-js-extra">var woocommerce_params = { "ajax_url": "\/asting\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/asting\/?wc-ajax=%%endpoint%%" };</script>
+    <script type="text/javascript"
+        src="https://demo.ovatheme.com/asting/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2"
+        id="wp-polyfill-inert-js"></script>
+    <script type="text/javascript"
+        src="https://demo.ovatheme.com/asting/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0"
+        id="regenerator-runtime-js"></script>
+    <script type="text/javascript"
+        src="https://demo.ovatheme.com/asting/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0"
+        id="wp-polyfill-js"></script>
+    <script type="text/javascript"
+        src="https://demo.ovatheme.com/asting/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1"
+        id="wp-hooks-js"></script>
+    <script type="text/javascript"
+        src="https://demo.ovatheme.com/asting/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef"
+        id="wp-i18n-js"></script>
+    <script type="text/javascript"
+        id="wp-i18n-js-after">wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });</script>
+    <script type="text/javascript"
+        id="give-js-extra">var give_global_vars = { "ajaxurl": "https:\/\/demo.ovatheme.com\/asting\/wp-admin\/admin-ajax.php", "checkout_nonce": "7d5c9ce1d7", "currency": "USD", "currency_sign": "$", "currency_pos": "before", "thousands_separator": ",", "decimal_separator": ".", "no_gateway": "Please select a payment method.", "bad_minimum": "The minimum custom donation amount for this form is", "bad_maximum": "The maximum custom donation amount for this form is", "general_loading": "Loading...", "purchase_loading": "Please Wait...", "textForOverlayScreen": "<h3>Processing...<\/h3><p>This will only take a second!<\/p>", "number_decimals": "2", "is_test_mode": "1", "give_version": "3.4.1", "magnific_options": { "main_class": "give-modal", "close_on_bg_click": false }, "form_translation": { "payment-mode": "Please select payment mode.", "give_first": "Please enter your first name.", "give_last": "Please enter your last name.", "give_email": "Please enter a valid email address.", "give_user_login": "Invalid email address or username.", "give_user_pass": "Enter a password.", "give_user_pass_confirm": "Enter the password confirmation.", "give_agree_to_terms": "You must agree to the terms and conditions." }, "confirm_email_sent_message": "Please check your email and click on the link to access your complete donation history.", "ajax_vars": { "ajaxurl": "https:\/\/demo.ovatheme.com\/asting\/wp-admin\/admin-ajax.php", "ajaxNonce": "3398a46e82", "loading": "Loading", "select_option": "Please select an option", "default_gateway": "manual", "permalinks": "1", "number_decimals": 2 }, "cookie_hash": "7b3b50768236aac7450528af37698410", "session_nonce_cookie_name": "wp-give_session_reset_nonce_7b3b50768236aac7450528af37698410", "session_cookie_name": "wp-give_session_7b3b50768236aac7450528af37698410", "delete_session_nonce_cookie": "0" };
+            var giveApiSettings = { "root": "https:\/\/demo.ovatheme.com\/asting\/wp-json\/give-api\/v2\/", "rest_base": "give-api\/v2" };</script>
+    <link rel="https://api.w.org/" href="https://demo.ovatheme.com/asting/wp-json/" />
+    <link rel="alternate" type="application/json" href="https://demo.ovatheme.com/asting/wp-json/wp/v2/pages/201" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://demo.ovatheme.com/asting/xmlrpc.php?rsd" />
+    <meta name="generator" content="WordPress 6.4.3" />
+    <meta name="generator" content="WooCommerce 8.6.0" />
+    <link rel="canonical" href="https://demo.ovatheme.com/asting/" />
+    <link rel='shortlink' href='https://demo.ovatheme.com/asting/' />
+    <link rel="alternate" type="application/json+oembed"
+        href="https://demo.ovatheme.com/asting/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.ovatheme.com%2Fasting%2F" />
+
+    <link rel="alternate" type="text/xml+oembed"
+        href="https://demo.ovatheme.com/asting/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.ovatheme.com%2Fasting%2F&#038;format=xml" />
+
+
+</head>
+
+
+
+
+<div class="ova-wrapp fixed-top ">
+    <div data-elementor-type="wp-post" data-elementor-id="2756" class="elementor elementor-2756">
+        <section style="width: 100%; background-color: rgb(44,39,52); margin-bottom: -5px; margin-top: -10px;"
+            class="elementor-section elementor-top-section elementor-element elementor-element-d05a330 elementor-hidden-phone elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+            data-id="d05a330" data-element_type="section"
+            data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-392de69"
+                    data-id="392de69" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-878f80d elementor-widget elementor-widget-ova_contact"
+                            data-id="878f80d" data-element_type="widget" data-widget_type="ova_contact.default">
+                            <div class="elementor-widget-container">
+                                <div class="contact-version-2">
+                                    <div class="ova-contact clearfix">
+                                        <div class="contact-left">
+                                            <ul _ngcontent-ng-c4138690677=""
+                                                style="display: flex; align-items: center; margin-top:5px;">
+                                                <li _ngcontent-ng-c4138690677=""
+                                                    style="display: flex; align-items: center;"><i
+                                                        _ngcontent-ng-c4138690677=""
+                                                        class="fas fa-phone-square icon"></i>
+                                                    <div _ngcontent-ng-c4138690677="" class="text">
+                                                        <p _ngcontent-ng-c4138690677=""><a _ngcontent-ng-c4138690677=""
+                                                                class="main" href="tel:+919421609987">+91 7588979986
+                                                            </a></p>
+                                                    </div>
+                                                    <div _ngcontent-ng-c4138690677="" class="text">
+                                                        <p _ngcontent-ng-c4138690677=""><a _ngcontent-ng-c4138690677=""
+                                                                class="main" href="tel:+919421609987">
+                                                                &nbsp;&nbsp; +91 9421609987</a></p>
+                                                    </div>
+
+
+                                                </li>
+                                                <li _ngcontent-ng-c4138690677=""
+                                                    style="display: flex; align-items: center;"><i
+                                                        _ngcontent-ng-c4138690677="" class="fas fa-envelope icon"></i>
+                                                    <div _ngcontent-ng-c4138690677="" class="text">
+                                                        <p _ngcontent-ng-c4138690677=""><a _ngcontent-ng-c4138690677=""
+                                                                class="main"
+                                                                href="mailto:socialforum10@gmail.com">socialforum10@gmail.com</a>
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="contact-right ">
+                                            <div class="list-social mt-2"> <a
+                                                    href="https://www.facebook.com/socialnetworkingforum/"
+                                                    target="_blank"><i class="fab fa-facebook-square"></i> </a>
+                                                <a href="https://x.com/i/flow/login?redirect_after_login=%2FPramod_Gaikwad"
+                                                    target="_blank"> <i class="fab fa-twitter"></i> </a>
+                                                <a href="#" target="_blank"> <i class="fa-brands fa-google"></i> </a>
+                                                <a href="#"> <i class="fa-brands fa-youtube"></i></a>
+                                                <a href="../../assets/img/About us/SNFjourney.pdf" download>
+                                                    <button class="brocherbutton">Download</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- app.component.html -->
+
+
+
+        <!-- <div class="NAVBAR_START" style="
+     
+      box-shadow: 0px 1px #888888;"> -->
+        <nav class="navbar navbar-expand-lg bg-white abbc " id="NAVBAR_HERE">
+            <div class="container-fluid abbc">
+                <a routerLink="/home">
+                    <!-- src="assets\img\Group 9 (1).png"  -->
+
+                    <img src="../../../assets/img/SNF new logo 2020.jpeg" alt="" class="my-1 navlogo"
+                        style="margin-right: 50px; margin-left:50px!important" /></a>
+                <div>
+
+
+                    <a routerLink="/home">
+                        <!-- src="assets\img\Group 9 (1).png"  -->
+
+                        <img src="assets\img\Group 9 (1).png" alt="" class="my-1  navlogo1"
+                            style="margin-right: 150px; margin-top:10px!important" /></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class=" navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav " style="width: 100% !important; display: flex; justify-content: center; ">
+                        <li class="nav-item nav1">
+                            <a class="nav-link internal " routerLink="/home" id="ITEM"><b>Home</b></a>
+                        </li>
+
+                        <!-- <li> 
+                          <div class="dropdown">
+                              <a class="nav-link  internal"  role="button" data-toggle="dropdown"
+                                  aria-expanded="true" id="ITEM" >
+                                  < >Who We Are</b></a>
+                              <div class="dropdown-menu">
+                                  <a class="dropdown-item " routerLink="/about">About Us</a>
+                                  <a class="dropdown-item" routerLink="/founderview">Founders View</a>
+                                  <a class="dropdown-item" routerLink="/importsnfproject">Important SNF Project</a>
+                                  <a class="dropdown-item" routerLink="/teamsnf">Team SNF</a>
+                                  <a class="dropdown-item" routerLink="/visionmission">Vision/Mission</a>
+                                  <a class="dropdown-item" routerLink="/snfoverview">SNF Overview</a>
+                              </div>
+                          </div>
+                      </li> -->
+                        <div class="internal dropdown nav2">
+                            <button (click)="toggleDropdown('whoWeAre')" class="dropdown-toggle">
+                                <b> Who We Are</b>
+                            </button>
+                            <div *ngIf="activeDropdown === 'whoWeAre'" class="dropdown-menu">
+                                <a class="dropdown-item" routerLink="/about">About Us</a>
+                                <a class="dropdown-item" routerLink="/founderview">Founders View</a>
+                                <a class="dropdown-item" routerLink="/importsnfproject">Important SNF Project</a>
+                                <a class="dropdown-item" routerLink="/teamsnf">Team SNF</a>
+                                <a class="dropdown-item" routerLink="/visionmission">Vision/Mission</a>
+                                <a class="dropdown-item" routerLink="/snfoverview">SNF Overview</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown internal">
+                            <button (click)="toggleDropdown('whatWeDo')" class="dropdown-toggle">
+                                <b>What We Do</b>
+                            </button>
+                            <div *ngIf="activeDropdown === 'whatWeDo'" class="dropdown-menu">
+                                <a class="dropdown-item" routerLink="/ongoingproject">On Going Initiatives</a>
+                                <a class="dropdown-item" routerLink="/upcomingProject">Upcoming Projects</a>
+                            </div>
+                        </div>
+
+
+                        <div class="dropdown internal">
+                            <button (click)="toggleDropdown('mediaAwards')" class="dropdown-toggle">
+                                <b>Media/Awards</b>
+                            </button>
+                            <div *ngIf="activeDropdown === 'mediaAwards'" class="dropdown-menu">
+                                <a class="dropdown-item" routerLink="/mediaarticle">Articles on SNF</a>
+                                <a class="dropdown-item" routerLink="/medianewspapers">SNF in Newspaper</a>
+                                <a class="dropdown-item" routerLink="/mediadocumentry">SNF TV news/ documentaries</a>
+                                <a class="dropdown-item" routerLink="/mediaawards">Awards And Recognition</a>
+                            </div>
+                        </div>
+                        <li class="nav-item  nav1">
+                            <a class="nav-link internal" routerLinkActive="active" routerLink="/finicialreports"
+                                id="ITEM"><b>Reports</b></a>
+                        </li>
+
+
+
+                        <!-- <div class=" internal dropdown">
+                        <button (click)="toggleDropdown()" class="dropdown-toggle">
+                        <b> Who We Are</b>
+                        </button>
+                        <div *ngIf="isDropdownOpen" class="dropdown-menu">
+                          <a class="dropdown-item " routerLink="/about">About Us</a>
+                                  <a class="dropdown-item" routerLink="/founderview">Founders View</a>
+                                  <a class="dropdown-item" routerLink="/importsnfproject">Important SNF Project</a>
+                                  <a class="dropdown-item" routerLink="/teamsnf">Team SNF</a>
+                                  <a class="dropdown-item" routerLink="/visionmission">Vision/Mission</a>
+                                  <a class="dropdown-item" routerLink="/snfoverview">SNF Overview</a>
+                        </div>
+                      </div>
+                    
+                      <div class="dropdown internal">
+                        <button (click)="toggleDropdown()" routerLink="/ongoingproject" class="dropdown-toggle">
+                         <b>What We Do</b>
+                        </button>
+                        <div *ngIf="isDropdownOpen" class="dropdown-menu">
+                          <a class="dropdown-item" routerLink="/ongoingproject">On Going Projects</a>
+                          <a class="dropdown-item" routerLink="/upcomingProject">Upcoming Projects</a>
+
+
+                          </div>
+                          </div>
+
+                          
+                      <div class="dropdown internal">
+                        <button (click)="toggleDropdown()" class="dropdown-toggle">
+                         <b>Media/Awards</b>
+                        </button>
+                        <div *ngIf="isDropdownOpen" class="dropdown-menu">
+                          <a class="dropdown-item" routerLink="/mediaarticle">Articles on SNF</a>
+                                  <a class="dropdown-item" routerLink="/medianewspapers">SNF in Newspaper</a>
+                                  <a class="dropdown-item" routerLink="/mediadocumentry">SNF TV news/
+                                      documentaries</a>
+                                  <a class="dropdown-item" routerLink="/mediaawards">Awards And Recognition</a>
+
+                          </div>
+                          </div>
+                  <div class="dropdown s1"> -->
+                        <!-- <a class="nav-link  internal" role="button"   routerLink="/about"  data-toggle="dropdown"
+                              aria-expanded="false" id="ITEM" ><b>Who We Are</b></a>
+                              <div class="dropdown-menu">
+                                  <a class="dropdown-item " routerLink="/about">About Us</a>
+                                  <a class="dropdown-item" routerLink="/founderview">Founders View</a>
+                                  <a class="dropdown-item" routerLink="/importsnfproject">Important SNF Project</a>
+                                  <a class="dropdown-item" routerLink="/teamsnf">Team SNF</a>
+                                  <a class="dropdown-item" routerLink="/visionmission">Vision/Mission</a>
+                                  <a class="dropdown-item" routerLink="/snfoverview">SNF Overview</a>
+                              </div>
+                      </div>  -->
+
+
+                        <!-- <div class="dropdown">
+                              <a class="nav-link  internal" role="button" data-toggle="dropdown"
+                                  aria-expanded="false" id="ITEM" ><b>What We Do</b></a>
+                              <div class="dropdown-menu">
+                                  <a class="dropdown-item" routerLink="/ongoingproject">On Going Projects</a>
+                                  <a class="dropdown-item" routerLink="/upcomingProject">Upcoming Projects</a>
+                              </div>
+                          </div>
+                       -->
+
+
+
+                        <!-- <div class="dropdown">
+                              <a class="nav-link  internal"  role="button" data-toggle="dropdown"
+                                  aria-expanded="false" id="ITEM" style="padding-left: 20px;"><b>Media/Award</b></a>
+                              <div class="dropdown-menu">
+                                  <a class="dropdown-item" routerLink="/mediaarticle">Articles on SNF</a>
+                                  <a class="dropdown-item" routerLink="/medianewspapers">SNF in Newspaper</a>
+                                  <a class="dropdown-item" routerLink="/mediadocumentry">SNF TV news/
+                                      documentaries</a>
+                                  <a class="dropdown-item" routerLink="/mediaawards">Awards And Recognition</a>
+                              </div>
+                          </div> -->
+                        <li class="nav-item nav1">
+                            <a class="nav-link internal " routerLink="/Contact" id="ITEM"><b>Contact</b></a>
+                        </li>
+
+                    </ul>
+                    <!-- <h5>Social Networking Forum</h5> -->
+                </div>
+            </div>
+        </nav>
+
+        <!-- </div> -->
+
+        <div class="show_mask_header mask_header_shrink" style="position: relative; height: 0;"></div>
+    </div>
+
+
+</div>

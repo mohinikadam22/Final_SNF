@@ -1,0 +1,10 @@
+.logo_head{
+    text-align: center;
+    padding-top: 30px;
+}
+#head_name{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: orange;
+    font-size: 35px;
+}

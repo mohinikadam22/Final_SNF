@@ -1,0 +1,62 @@
+.card {
+    position: relative;
+    overflow: hidden;
+}
+.elementor-widget-ova_header .wrap_ova_header .ova_header_el .header_title{
+    padding:  120px  0px  0px  0px!important;
+    margin-left: -80rem !important;
+    margin-bottom: 8rem !important;
+}
+.card img {
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+.title{
+    font-size: 22px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-body {
+    transition: transform 0.5s ease, color 0.2s ease;
+}
+.ImageTeam{
+    height:300px;
+    width: auto;
+
+}
+.card:hover .card-body {
+    transform: scale(1.1);
+    color: orange;
+}.tabbuttton{
+    background: #DF5225;
+    color: white ;
+    font-weight: 600;
+    border-radius: 30px;
+}
+.tabbuttton .active{
+    color:  black ;
+    
+    
+}
+.tabbuttton a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Default text color */
+}
+.nav-tabs {
+    border-bottom: 0px solid #ffffff  !important; 
+}
+@media screen and (max-width:600px) {
+    .elementor-widget-ova_header .wrap_ova_header .ova_header_el .header_title{
+        margin-top:50px;
+        margin-left:50px;
+    }
+    .mer{
+        margin-top: -50px!important;
+       }
+    
+}

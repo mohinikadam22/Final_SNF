@@ -1,0 +1,64 @@
+.ova-heading .title {
+    font-size: 45px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #2c2734;
+    margin: 0;
+    margin-bottom: -20px;
+}
+.header_title    {
+    padding: 200px 0 12px!important;
+}
+
+.d1{
+    line-height: 36px;
+     /* text-indent:100px;  */
+     text-align: justify; 
+     color: black;
+     font-size: 18px;
+    
+}
+.d2{
+    margin-top:-40px;
+}
+.Who_we_are {
+    background-image: url('../../../assets/img/About us/about_banner.png');
+    margin-top: -10px;
+    background-size: cover;
+    background-position: center center;
+
+}
+.desk{
+    display: block;
+}
+.mbl{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .youtube_video {
+        margin-bottom: -90px;
+    }
+    .header_title    {
+        padding: 100px 0 12px!important;
+        font-size: 20px!important;
+    }
+    .ova-heading .title{
+        font-size: 25px;
+        
+    }
+    .elementor-widget-ova_header .wrap_ova_header .ova_header_el .header_title{
+        margin-left:0px!important;
+    
+}
+.desk{
+    display: none;
+}
+.mbl{
+    display: block;
+    height: 700px;
+    width: 250px;
+    margin-left: 50px;
+    padding:20px;
+}
+}

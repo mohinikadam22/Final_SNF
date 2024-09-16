@@ -1,0 +1,31 @@
+p {
+    line-height: 1.5em;
+    margin: 0rem 0;
+    color:black;
+    text-align: justify;
+}
+.title {
+    font-size: 34px!important;
+}
+
+
+@media screen and (max-width:600px){
+    .title{
+        font-size: 30px!important;
+        letter-spacing: -2px;
+    }
+    .elementor-widget-ova_header .wrap_ova_header .ova_header_el .header_title{
+        margin-left:0px!important;
+        padding:5px;
+        font-size: 20px!important;
+    
+}
+    
+}
+@media only screen and (min-width: 1280px) and (max-width:1360px){
+    .elementor-3023 .elementor-element.elementor-element-3848f6f .ova_header_el .header_title{
+    padding: 174px 51px 0px;
+  
+    
+  }
+  }

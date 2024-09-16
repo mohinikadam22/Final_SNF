@@ -1,0 +1,186 @@
+.HEAD_START {
+    text-align: center;
+    padding-top: 40px;
+    height: auto;
+    padding-bottom: 20px;
+}
+.row{
+    row-gap:20px;
+}
+.header_title{
+    margin-left:  90rem!important;
+  
+}
+h6{
+    font-size: 14px;
+}
+#ON_GOING_NAME {
+    color: orange;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+ 
+.modal {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 1050;
+  }
+  
+  .modal-dialog {
+    max-width: 40%;
+    margin: 10% auto;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 5px;
+    outline: 0;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem 1rem 28rem ;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  
+  .modal-body {
+    padding: 0rem;
+    margin:5%;
+  }
+  
+  .btn-close {
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+
+/* #IMG_LOGO {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 1s;
+} */
+
+/* #IMG_LOGO:hover {
+    box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.2);
+} */
+
+/* #Clean_Water {
+    text-align: center;
+    color: red;
+    font-size: 20px;
+} */
+
+/* #IMG_NAME {
+    color: orange;
+    font-size: 17px;
+}
+
+#CARD_IMG {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+#CARD_IMG:hover {
+    box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.2);
+
+
+}
+
+.card-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#CARD_IMG:hover {
+    p {
+        color: red;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+/*ii)   Slide Text  */
+#CARD_IMG_dynamically {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+#CARD_IMG_dynamically img {
+    transition: transform 0.5s ease;
+}
+
+#CARD_IMG_dynamically:hover {
+    transform: scale(1.1);
+}
+
+#CARD_IMG_dynamically:hover img {
+    transform: scale(1.2);
+}
+
+#CARD_IMG_dynamically:hover .card {
+    transform: translateY(-5px);
+}
+
+#IMG_NAME_dynamically {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+    color: orangered;
+    font-size: 14px;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    margin: 0;
+    transition: bottom 0.8s ease;
+    line-height: 1.6;
+}
+
+#CARD_IMG_dynamically:hover #IMG_NAME_dynamically {
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+@media screen and (max-width:600px) {
+    .modal{
+        display: none;
+    }
+    
+  }
+  @media only screen and (min-width: 1280px) and (max-width:1360px){
+    .header_title{
+        margin-left: 50rem!important;
+    }
+    .elementor-widget-ova_header .wrap_ova_header .ova_header_el .header_title{
+        margin-left: 50rem!important;
+        
+        
+    }
+    }
